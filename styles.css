@@ -1,0 +1,381 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+h2 {
+  font-size: 48px;
+  font-weight: 600;
+  color: #253347;
+  padding-bottom: 10px;
+}
+h3 {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+h4 {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+}
+/* ***Navigation Container */
+nav {
+  position: relative;
+}
+.bg-color-nav {
+  background-image: linear-gradient(
+    to right,
+    rgba(216, 226, 231, 0.1),
+    rgba(216, 226, 231, 0.7)
+  );
+  width: 70%;
+  height: 737px;
+  z-index: -10;
+  border-bottom-right-radius: 35px;
+}
+.nav-container {
+  position: absolute;
+  top: 0;
+  left: 10%;
+  width: 80%;
+  margin: 50px auto 100px;
+}
+.nav-logo {
+  padding-bottom: 100px;
+}
+.nav-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 100px;
+}
+h1 {
+  font-size: 64px;
+  font-weight: 600;
+  padding-bottom: 20px;
+}
+
+/* ***BMI Container **** */
+.bmi-container {
+  background-color: #fff;
+  padding: 25px;
+  border-radius: 8px;
+}
+.bmi-container h4 {
+  margin-bottom: 20px;
+}
+.radio-option {
+  display: flex;
+  align-items: center;
+
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.radio-input {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+}
+
+.bmi-result {
+  color: #fff;
+  font-weight: 300;
+  display: flex;
+  column-gap: 40px;
+  align-items: center;
+  padding: 30px;
+  background-color: #345ff6;
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+  margin-top: 30px;
+}
+#welcome-container {
+  flex-direction: column;
+  text-align: center;
+}
+#bmi-result__container {
+  display: none;
+}
+
+.bmi-result h2 {
+  padding-top: 15px;
+  color: #fff;
+}
+
+input[type="radio"] {
+  background-color: #fff;
+  outline: 1px solid grey;
+  border-radius: 20px;
+  cursor: pointer;
+
+  height: 21px;
+
+  width: 21px;
+  -webkit-appearance: none;
+}
+
+input[type="radio"]:after {
+  background-color: #fff;
+  border-radius: 25px;
+  content: "";
+  display: block;
+  height: 15px;
+  position: relative;
+  top: 2.5px;
+  left: 2.5px;
+  width: 15px;
+}
+
+input[type="radio"]:checked:after {
+  background-color: #345ff6;
+}
+input[type="radio"]:hover {
+  border: 1px solid #345ff6;
+}
+/* **METRIC Container */
+.metric-container {
+  display: flex;
+  align-items: center;
+  column-gap: 24px;
+  justify-content: space-between;
+}
+input[type="text"] {
+  padding: 20px;
+  border-radius: 10px;
+  border: none;
+  outline: 1px solid #d8e2e7;
+  margin: 8px 0;
+  font-size: 20px;
+  width: 235px;
+}
+.height-content,
+.weight-content,
+.imp-height-ft__content,
+.imp-height-in__content,
+.imp-weight-st__content,
+.imp-weight-lbs__content {
+  position: relative;
+}
+.metric-cm,
+.metric-kg,
+.imperial-in,
+.imperial-ft,
+.imperial-st,
+.imperial-lbs {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  font-size: 20px;
+}
+
+/* ***Imperial Container */
+.imperial-container {
+  position: relative;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  column-gap: 24px;
+  row-gap: 10px;
+}
+.imp-height-container,
+.imp-weight-container {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  column-gap: 20px;
+}
+
+/* ***Header Container */
+header {
+  width: 80%;
+  margin: 50px auto;
+}
+.header-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 120px;
+  align-items: center;
+
+  row-gap: 50px;
+}
+.header-container > img {
+  width: 100%;
+}
+
+/* ***Main Container */
+main {
+  width: 95%;
+  margin: 50px auto;
+  background-color: rgba(216, 226, 231, 0.2);
+
+  border-radius: 8px;
+}
+.main-container {
+  width: 85%;
+  margin: 0 auto;
+  padding: 40px 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  column-gap: 50px;
+
+  row-gap: 50px;
+}
+.main-content {
+  display: flex;
+  flex-direction: column;
+
+  row-gap: 20px;
+}
+.main-content img {
+  width: 50px;
+  height: 50px;
+}
+
+/* **Limitation Container*** */
+
+.limit-container {
+  width: 80%;
+  margin: 20px auto 80px;
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 30px;
+  column-gap: 30px;
+}
+.limit-content {
+  width: 365px;
+  padding: 15px;
+}
+.limit-content:not(:first-child) {
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+  border-radius: 8px;
+}
+.limit-content:first-child {
+  width: 564px;
+  margin-right: 100px;
+}
+.limit-content > div {
+  display: flex;
+  align-items: center;
+  row-gap: 40px;
+  column-gap: 20px;
+}
+.limit-content p {
+  padding-top: 10px;
+}
+
+.add-margin {
+  margin-left: 32%;
+}
+.move-right {
+  margin-left: 15%;
+}
+
+@media only screen and (max-width: 1100px) {
+  nav {
+    margin-bottom: 300px;
+  }
+  .nav-logo {
+    text-align: center;
+  }
+  .nav-content {
+    grid-template-columns: 1fr;
+    row-gap: 30px;
+    text-align: center;
+  }
+  .bg-color-nav {
+    width: 100%;
+  }
+
+  .metric-container {
+    text-align: left;
+  }
+  .metric-container input {
+    width: 280px;
+  }
+  header {
+    width: 90%;
+    margin: 100px auto 0;
+  }
+  .header-container {
+    column-gap: 60px;
+  }
+  .header-container h2 {
+    font-size: 35px;
+  }
+
+  .main-container {
+    grid-template-columns: 1fr;
+  }
+  .main-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    column-gap: 15px;
+  }
+  .limit-container {
+    width: 90%;
+    column-gap: 10px;
+    justify-content: center;
+  }
+  .limit-content:first-child {
+    width: 686px;
+    text-align: center;
+    margin-right: 0;
+  }
+  .limit-content {
+    width: 335px;
+  }
+  .add-margin,
+  .move-right {
+    margin-left: 0;
+  }
+}
+@media only screen and (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+  .header-container h2 {
+    font-size: 30px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  nav {
+    margin-bottom: 350px;
+  }
+  .nav-container {
+    left: 10px;
+    width: 90%;
+  }
+  h1 {
+    font-size: 48px;
+  }
+
+  .header-container {
+    grid-template-columns: 1fr;
+  }
+  .main-content {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .metric-container {
+    flex-direction: column;
+  }
+  .imperial-container input {
+    width: 132px;
+  }
+
+  .bmi-result {
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+  }
+}
