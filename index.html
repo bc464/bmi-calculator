@@ -19,7 +19,7 @@
     <script defer src="script.js"></script>
   </head>
   <body>
-    <nav role="navigation">
+    <nav>
       <div class="bg-color-nav"></div>
       <div class="nav-container">
         <div class="nav-logo">
@@ -45,7 +45,7 @@
                 </div>                
                 <div class="radio-input">
                   <input type="radio" id="imperial"name="radio-option" value="Imperial" >
-                  <lable for="imperial">Imperail</lable>
+                  <label for="imperial">Imperail</label>
                 </div>              
               </div>
 
@@ -65,7 +65,7 @@
               <div class="imperial-container">
                 <div class="imp-height-container">
                   <div class="imp-height-ft__content">
-                    <label for="imperial-height">Height</label><br>
+                    <label for="imp-height-ft">Height</label><br>
                     <input type="text" id="imp-height-ft" placeholder="5" >
                     <span class="imperial-ft">ft</span>
                   </div>
@@ -95,7 +95,7 @@
             <div class="bmi-result" id="bmi-result__container">
               <div>
                 <p>Your BMI is...</p>
-                <h2 id="bmi-value"> </h2>
+                <h2 id="bmi-value"></h2>
               </div>
               <div>
                 <p>Your BMI suggests you're  <b><span id="bmi-weight"></span></b>. Your ideal weight is between <b><span id="lower-weight"></span></b> and <b><span id="upper-weight"></span></b>.</p>
@@ -106,7 +106,7 @@
         </div>
       </div>
     </nav>
-    <header role="header">
+    <header role="banner">
       <div class="header-container">
         <img
           src="./assets/images/image-man-eating.webp"
@@ -126,7 +126,7 @@
         </div>
       </div>
     </header>
-    <main role="main">
+    <main>
       <section class="main-container">
         <div  class="main-content">
           <img src="./assets/images/icon-eating.svg" alt="eating icon" />
@@ -154,7 +154,7 @@
         </div>
       </section>
       </main>
-      <section class="limit-container">
+      <section role="contentinfo" class="limit-container">
         <div class="limit-content">
         <h2>Limitations of BMI</h2>
           <p>
